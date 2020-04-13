@@ -1,0 +1,21 @@
+body {
+    background: black;
+    color: white;
+    height: auto;
+    
+}
+#spielFlaeche {
+    border: 1px black dotted;
+    background: white;
+    color: blue;
+    height: 600px;
+    width: 50%;
+    margin: 0px auto;
+    text-align: center;
+    
+}
+#my-beispiel {
+    background: black;
+    color: white;
+    
+}
