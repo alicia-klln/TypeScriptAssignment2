@@ -1,7 +1,7 @@
-import { alertMe } from './myOtherModule';
-import { Meldung } from './memoryCard';
+//import { alertMe } from './myOtherModule';
+import { MemoryCard } from './memoryCard';
 
 
-console.log(Meldung);
+customElements.define('my-memoryCard', MemoryCard);
 
-alertMe();
+//alertMe();

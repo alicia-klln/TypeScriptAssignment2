@@ -6,7 +6,9 @@ Write any source files in typescript inside the source folder, the main file bei
 
 Type tsc to javascript
 
+bundle js: mithilfe von: rollup -c !
 Link your compiled bundle.js into your HTML-Files.
+
 
 
 

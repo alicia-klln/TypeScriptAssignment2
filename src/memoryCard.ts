@@ -1,3 +1,6 @@
-export function Meldung():void {
-    alert("Hello");
+export class MemoryCard extends HTMLElement{
+    constructor(){
+        super();
+        this.innerHTML = "<h1>Hello World</h1>";
+    }
 }

@@ -1,3 +1,3 @@
-export function alertMe():void {
-    alert("ATTENTION PLEASE");
-}
+//export function alertMe():void {
+    //alert("ATTENTION PLEASE");
+//}
