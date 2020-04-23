@@ -1,5 +1,5 @@
 //(4)---------------Namenseingabe über Eingabefeld---------------
-export function namensEingabe() {
+export function namensEingabe():boolean {
     var nameInput:any = document.getElementById("nameInput");
     var name:any = document.getElementById("vorname");
     name.value; //mit value kann Wert des Eingabeelements abgerufen werden

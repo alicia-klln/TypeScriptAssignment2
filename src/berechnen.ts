@@ -1,9 +1,9 @@
 //(5)---------------Berechnung---------------
-export function berechnen():any {
-    let a = 2000; // Variable a initialisieren
-    let b = 2; // Variable b initialisieren
-    let multiplikation = a * b; // Multiplikationsvariable initialisieren
-    let ergebnis = multiplikation / 1000; //Ergebnisvariable für spätere Ausgabe in Sekunden
+export function berechnen():void {
+    let a:number = 2000; // Variable a initialisieren
+    let b:number = 2; // Variable b initialisieren
+    let multiplikation:number = a * b; // Multiplikationsvariable initialisieren
+    let ergebnis:number = multiplikation / 1000; //Ergebnisvariable für spätere Ausgabe in Sekunden
     
     setTimeout(altersEingabe, multiplikation); // FUnktion altersEingabe erst nach berechneter Zeit einmalig starten
     function altersEingabe() {
@@ -33,4 +33,4 @@ export function berechnen():any {
             
         }
     }
-    }
+}
