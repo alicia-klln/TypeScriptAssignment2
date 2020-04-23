@@ -1,6 +1,6 @@
 //(1)-------------Canvas-Beispiel: HELLO zeichnen-----------------------
-var canvas:any = document.getElementById("canvas"); //Element mit id="canvas" ansprechen
-var buchstabe:any = canvas.getContext("2d"); //Kontext
+var canvas = document.getElementById("canvas"); //Element mit id="canvas" ansprechen
+var buchstabe = canvas.getContext("2d"); //Kontext
 
 function drawH () {
     //H zeichnen
@@ -73,13 +73,11 @@ setTimeout(hideCanvas, 3500); // Canvas-Element wird nach 3,5 Sekunden ausgeblen
 
 //(2/3)---------------Cookie-Bar Sichtbarkeit---------------
 // Ausblenden bei "Accept" (left-button)
-var leftButton:any = document.getElementById("left_button"); // ID in Variable speichern
-var cookieBar:any = document.getElementById("Cookie-Bar");
-var cookieInfo:any = document.getElementById("Cookie-Info");
+var leftButton = document.getElementById("left_button"); // ID in Variable speichern
 
 leftButton.addEventListener('click', pushLeftButton); // Variable mit click-Event und Funktion verknüpfen
 function pushLeftButton(){
-    cookieBar.style.display = "none"; // Sichtbarkeit der Cookie-Bar auf unsichtbar setzen
+    document.getElementById("Cookie-Bar").style.display = "none"; // Sichtbarkeit der Cookie-Bar auf unsichtbar setzen
 }
 // Mouseover-Effect bei "Accept" (left-button)
 leftButton.addEventListener('mouseover', mouseoverLeftButton);
@@ -94,12 +92,12 @@ function mouseoutLeftButton(){
     leftButton.style.color = ""; // CSS Eigenschaft "color" auf den Originalzustand setzen
 }
 // Ausblenden bei "Get more information" und öffnen des Cookie-Infofensters
-var rightButton:any = document.getElementById("right_button");
+var rightButton = document.getElementById("right_button");
 
 rightButton.addEventListener('click', pushRightButton);
 function pushRightButton(){
-    cookieBar.style.display = "none"; // Cookie-Bar ausblenden
-    cookieInfo.style.visibility = "visible"; // Cookie-Info-Fenster sichtbar machen
+    document.getElementById("Cookie-Bar").style.display = "none"; // Cookie-Bar ausblenden
+    document.getElementById("Cookie-Info").style.visibility = "visible"; // Cookie-Info-Fenster sichtbar machen
 }
 // Mouseover-Effect bei "Get more information"
 rightButton.addEventListener('mouseover', mouseoverRightButton);
@@ -116,11 +114,11 @@ function mouseoutRightButton(){
 
 //(2/3)---------------Cookie-Infofenster Sichtbarkeit---------------
 // Ausblenden des Cookie-Infofensters
-var accept:any = document.getElementById("cookieAccept");
+var accept = document.getElementById("cookieAccept");
 
 accept.addEventListener('click', pushAcceptButton);
 function pushAcceptButton(){
-    cookieInfo.style.display = "none";
+    document.getElementById("Cookie-Info").style.display = "none";
 }
 accept.addEventListener('mouseover', mouseoverAcceptButton);
 function mouseoverAcceptButton(){
@@ -134,15 +132,13 @@ function mouseoutAcceptButton(){
 }
 
 //(4)---------------Namenseingabe über Eingabefeld---------------
-var nameInput:any = document.getElementById("nameInput");
 function namensEingabe() {
-    var name:any = document.getElementById("vorname");
-    name.value; //mit value kann Wert des Eingabeelements abgerufen werden
+    var name = document.getElementById("vorname").value; //mit value kann Wert des Eingabeelements abgerufen werden
     //if-Bedingung für die Reaktion auf die Eingabe eines Namens
     if (!clicked) { //Wenn clicked = true
         Array.from(document.getElementsByClassName("personalisierung")).forEach(function (element) { // zerlegt Inhalt in Array und ruft Funktion mit Parameter element auf
             element.innerHTML += " " + name + "!"; // Inhalt wird mit neuen Inhalten ergänzt
-            nameInput.style.display = "none"; // Fenster für Namenseingabe wird ausgeblendet
+            document.getElementById("nameInput").style.display = "none"; // Fenster für Namenseingabe wird ausgeblendet
         });
         clicked = !clicked;
     } 
@@ -160,7 +156,7 @@ let ergebnis = multiplikation / 1000; //Ergebnisvariable für spätere Ausgabe i
 setTimeout(altersEingabe, multiplikation); // FUnktion altersEingabe erst nach berechneter Zeit einmalig starten
 function altersEingabe() {
     alert("Du bist jetzt schon seit " + ergebnis + " Sekunden auf dieser Website."); // Infomeldung mit berechnetem Sekunden 
-    var alter:any = prompt("Verrätst du mir dein Alter? Bite gib die entsprechende Zahl ein!"); //Abfragefenster für Alter
+    var alter = prompt("Verrätst du mir dein Alter? Bite gib die entsprechende Zahl ein!"); //Abfragefenster für Alter
     
     if(alter == 18){ //(Bedingung)
         alert("Toll, du bist jetzt volljährig!"); //Anweisung

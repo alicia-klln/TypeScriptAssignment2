@@ -1,34 +1,207 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Swarming 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20131201
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css" />
-    <title>TypeScript-Assignment2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
 </head>
-<body>
-    <h1>Überschrift</h1>
-    <div id="spielFlaeche" class="flex-container">
+<body> <!-- onload="PopUp()" -->
+<div id="background">
+	<canvas id="canvas"></canvas>
 
-        <div id="karteBlau1" class="flex-items">   
+	<!--  --><div id="Cookie-Bar">
+		<h2>Cookie-Bar</h2>
+		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+			sed diam nonumy eirmod tempor invidunt ut labore et 
+			dolore magna aliquyam erat, sed diam voluptua. 
+			At vero eos et accusam et justo duo dolores et ea rebum. 
+			Stet clita kasd gubergren, no sea takimata sanctus est 
+			Lorem ipsum dolor sit amet.</p>
+		<div id="button">
+			<p id="left_button">Accept</p>
+			<p id="right_button">Get more information</p>
+		
+		</div>
+	</div> 
+	<!--  --><div id="Cookie-Info">
+		<h2>Cookie Details</h2> <br>
+		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+			sed diam nonumy eirmod tempor invidunt ut labore et 
+			dolore magna aliquyam erat, sed diam voluptua. 
+			At vero eos et accusam et justo duo dolores et ea rebum. 
+			Stet clita kasd gubergren, no sea takimata sanctus est 
+			Lorem ipsum dolor sit amet.
+		</p>
+		<br>		
+		<div id="form">
+			<form>
+				<h3><i>Hey you!</i></h3>
+				<h3>Which cookies are allowed?</h3> <br>
+				<fieldset>
+				  <input type="checkbox" id="bc" name="Basis-Cookies" value="Basis-Cookies" checked disabled>
+				  <label for="bc"> Basis-Cookies</label> 
+				  <input type="checkbox" id="mc" name="Marketing-Cookies" value="Marketing-Cookies">
+				  <label for="mc"> Marketing-Cookies</label>
+				  <input type="checkbox" id="tc" name="Tracking-Cookies" value="Tracking-Cookies">
+				  <label for="tc"> Tracking-Cookies</label> 
+				</fieldset>
+			  </form>
+		</div>
+		<br>
+		<div id="cookieAccept" class="Cookie-Info-buttons">
+			<p >Accept</p>
+		</div>
+	</div>
+	 <!-- --> 
+	 <div id="nameInput">
+		 <h2>Hej du!</h2>
+    	<p>
+			Wir würden Dich gerne besser kennen lernen <br>
+			Bitte gib hier deinen Vornamen ein. <br>
+			Dann können wir dich direkt ansprechen :).
+		</p>
+		<form onsubmit="return namensEingabe()">
+			<input id="vorname" name="vorname" type="text" autocomplete="off" minlength="3" required/>
+			<button id="persButton" type="submit">Bestätigen</button>
+			</form>
+		
+	</div> 
+	<div id="header">
 
-        </div>
-        <div id="karteBlau2" class="flex-items">
+	<div id="logo">
+	<h1><a href="#" class="icon icon-group"><span>Swarming</span></a></h1>
+	</div>
 
-        </div>
-        <div id="karteBlau3" class="flex-items">
-
-        </div>
-        <div id="karteBlau4" class="flex-items">
-
-        </div>
-        <div id="karteBlau5" class="flex-items">
-
-        </div>
-        
-        
-    </div>
-    
-    <script src="./build/bundle.js"></script>
+	<div id="menu" class="container">
+		<ul>
+			<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
+			<li><a href="#" accesskey="1" title="">Services</a></li>
+			<li><a href="#" accesskey="2" title="">Our Clients</a></li>
+			<li><a href="#" accesskey="3" title="">About Us</a></li>
+			<li><a href="#" accesskey="4" title="">Careers</a></li>
+			<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+		</ul>
+	</div>
+</div>
+<div id="page-wrapper">
+<div id="page" class="container">
+	<div id="content">
+		<div class="title">
+			<h2 id="h2" class="personalisierung">Welcome to our website, </h2>
+			<span class="byline">Mauris vulputate dolor sit amet nibh</span>
+		</div>
+		<p>This is <strong>Swarming</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
+	</div>
+	<div id="sidebar"><img src="images/pic05.jpg" alt="" /></div>
+</div>
+</div>
+<div id="featured-wrapper">
+	<div id="featured" class="container">
+		<div class="major">
+			<h2>Maecenas lectus sapien</h2>
+			<span class="byline">Cras vitae metus aliquam risus pellentesque pharetra</span>
+		</div>
+		<div class="column1">
+			<span id="icons" class="icon icon-bar-chart" onmouseover="bigIcon" onmouseout="smallIcon"></span>
+			<div class="title">
+				<h2>Maecenas lectus sapien</h2>
+				<span class="byline">Integer sit amet aliquet pretium</span>
+			</div>
+		</div>
+		<div class="column2">
+			<span id="icons2" class="icon icon-home"></span>
+			<div class="title">
+				<h2>Praesent scelerisque</h2>
+				<span class="byline">Integer sit amet aliquet pretium</span>
+			</div>
+		</div>
+		<div class="column3">
+			<span class="icon icon-building"></span>
+			<div class="title">
+				<h2>Fusce ultrices fringilla</h2>
+				<span class="byline">Integer sit amet aliquet pretium</span>
+			</div>
+		</div>
+		<div class="column4">
+			<span id="icons" class="icon icon-picture"></span>
+			<div class="title">
+				<h2>Etiam posuere augue</h2>
+				<span class="byline">Integer sit amet aliquet pretium</span>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="portfolio-wrapper">
+	<div id="portfolio" class="container">
+		<div class="major">
+			<h2>Suspendisse lacus turpis</h2>
+			<span class="byline">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</span>
+		</div>
+		<div class="column1">
+			<a href="#" class="image image-full"><img src="images/pic01.jpg" height="150" alt="" /></a>
+			<div class="box">
+				<p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
+				<a href="#" class="button">Read More</a>
+			</div>
+		</div>			
+		<div class="column2">
+			<a href="#" class="image image-full"><img src="images/pic02.jpg" height="150" alt="" /></a>
+			<div class="box">
+				<p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
+				<a href="#" class="button">Read More</a>
+			</div>
+		</div>			
+		<div class="column3">
+			<a href="#" class="image image-full"><img src="images/pic03.jpg" height="150" alt="" /></a>
+			<div class="box">
+				<p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
+				<a href="#" class="button">Read More</a>
+			</div>
+		</div>			
+		<div class="column4">
+			<a href="#" class="image image-full"><img src="images/pic04.jpg" height="150" alt="" /></a>
+			<div class="box">
+				<p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
+				<a href="#" class="button">Read More</a>
+			</div>
+		</div>			
+	</div>
+</div>
+<div id="contact" class="container">
+		<div class="major">
+			<h2>Get in touch</h2>
+			<span class="byline">Phasellus nec erat sit amet nibh pellentesque congue</span>
+		</div>
+		<ul class="contact">
+			<li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
+			<li><a href="#" class="icon icon-facebook"><span></span></a></li>
+			<li><a href="#" class="icon icon-dribbble"><span>Pinterest</span></a></li>
+			<li><a href="#" class="icon icon-tumblr"><span>Google+</span></a></li>
+			<li><a href="#" class="icon icon-rss"><span>Pinterest</span></a></li>
+		</ul>
+</div>
+<div id="copyright" class="container">
+	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+</div>
+	<script type="text/javascript" src="default.js"></script>
+</div>
 </body>
 </html>
