@@ -1,10 +1,10 @@
 //(1)-------------Canvas-Beispiel: HELLO zeichnen-----------------------
 
-export function canvasZeichnung() {
+export function canvasZeichnung():void {
     var canvas:any = document.getElementById("canvas"); //Element mit id="canvas" ansprechen
     var buchstabe:any = canvas.getContext("2d"); //Kontext
 
-    function drawH () {
+    function drawH ():void {
         //H zeichnen
         buchstabe.beginPath();
         buchstabe.moveTo(25, 25);
@@ -30,7 +30,7 @@ export function canvasZeichnung() {
         buchstabe.stroke();
     }
     setTimeout(drawE, 800); // E nach 0,8 Sekunden einblenden lassen
-    function drawL () {
+    function drawL ():void {
         //L zeichnen
         buchstabe.beginPath();
         buchstabe.moveTo(125, 25);
@@ -39,7 +39,7 @@ export function canvasZeichnung() {
         buchstabe.stroke();
     }
     setTimeout(drawL, 1100); // L nach 1,1 Sekunden einblenden lassen
-    function drawL2 () {
+    function drawL2 ():void {
         //L zeichnen
         buchstabe.beginPath();
         buchstabe.moveTo(175, 25);
@@ -48,7 +48,7 @@ export function canvasZeichnung() {
         buchstabe.stroke();
     }
     setTimeout(drawL2, 1400); // L nach 1,4 Sekunden einblenden lassen
-    function drawO () {
+    function drawO ():void {
         //O zeichnen
         buchstabe.beginPath();
         buchstabe.moveTo(225, 25);
