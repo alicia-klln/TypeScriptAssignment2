@@ -50,7 +50,7 @@
 	
 	.container
 	{
-		width: 80%;
+		width: 100%;
 		margin: 0px auto;
 		
 	}
@@ -151,54 +151,17 @@
 		font-size: 1.1em;
 	}
 
-
-/*********************************************************************************/
-/* Button Style                                                                  */
-/*********************************************************************************/
-
-	.button
-	{
-		display: inline-block;
-		margin: 1em 0em;
-		padding: 1em 3em 1em 3em;
-		background: rgb(50, 74, 116);;
-		border-radius: 8px;
-		letter-spacing: 0.20em;
-		text-decoration: none;
-		text-align: center;
-		text-transform: uppercase;
-		font-weight: 400;
-		font-size: 0.90em;
-		color: #FFF;
-	}
-/*********************************************************************************/
-/* Canvas                                                                      */
-/*********************************************************************************/
-canvas {
-	width: 500px;
-	height: 200px;
-	position: fixed;
-	z-index: 10;
-	right: 300px;
-	top: 100px;
-
-	background: rgba(50, 74, 116, 0.9);
-	
-
-}
-
-
 /*********************************************************************************/
 /* Namenseingabe                                                                        */
 /*********************************************************************************/
-#nameInput 
+/* #nameInput 
 {
 	background: rgba(0, 0, 0, 1.0);
 	height: 200px;
 	width: 300px;
 	position: fixed;
 	z-index: 10;
-	/* right: -200px; */
+	 /*right: -200px;
 	right: 0px;
 	top: 100px;
 	color: rgb(255, 255, 255);
@@ -207,7 +170,7 @@ canvas {
 	text-align: center;
 	padding: 0px;
 	transition: 10s ease-in;
-	/* -webkit-animation: einblenden 5s ; */
+	/* -webkit-animation: einblenden 5s ; 
 }
 #nameInput h2 {
 	font-size: 3em;	
@@ -216,137 +179,15 @@ canvas {
 }
 
 
-
-
-
-/*********************************************************************************/
-/* Cookie-Bar                                                                        */
-/*********************************************************************************/
-
-@-webkit-keyframes einblenden { /* Für Safari und Chrome */
-    from { opacity:0; }
-    to { opacity:1; }
-}
-#Cookie-Bar
-{
-	background: rgba(63, 63, 63, 0.8);
-	height: 120px;
-	/* width: 70%; */
-	position: fixed;
-	z-index: 10;
-	margin: 500px auto;
-	/* margin: 500px 20px 0 0; */
-	color: white;
-	text-align: center;
-	padding: 10px 200px;
-	transition: 10s ease-in;
-	-webkit-animation: einblenden 5s ;
-}
-#Cookie-Bar:hover
-{
-	transform: translateY(20px,-20px);
-	transition: all 0.4s ease-in-out;
-}
-
-#button
-{
-	margin: auto;
-	padding: 0px 40px;
-	align-items: center;
-	width: 300px;
-	display: block;
-	font-size: 15px; /* 1em; */
-	font-weight: 600;
-}
-#left_button 
-{
-	float: left;
-	margin: 0 2 px;
-	/* border: 2px dotted rgb(119, 119, 119); */
-	text-align: center;
-	width: 30%;
-	background: rgb(255, 255, 255);
-	color: rgb(0, 0, 0);
-}
-/*
-#left_button:hover
-{
-	background: rgb(0, 0, 0);
-	color: rgb(255, 255, 255);
-} 
 */
-#right_button 
-{
-	float: right;
-	margin: 0 2px;
-	width: 60%;
-	background: rgb(128, 128, 128);
-	color: rgb(255, 255, 255);
-}
-/*
-#right_button:hover
-{
-	background: rgb(54, 54, 54);
-	color: rgb(255, 255, 255);
-}
-*/
-/*********************************************************************************/
-/* Cookie-Info                                                                        */
-/*********************************************************************************/
-#Cookie-Info
-{
-	background: rgba(63, 63, 63, 1.0);
-	height: 300px;
-	position:fixed;
-	z-index: 10;
-	visibility: hidden;
 
-/* Mittig ausrichten (nächste 5 Werte) */
-	
-	width:600px;
-	left:0;
-	right:0;
-	margin:200px auto;
-
-	color: white;
-	text-align: center;
-	padding: 10px 20px;
-	transition: 10s ease-in;
-}
-/*
-#Cookie-Info:hover
-{
-	transform: translateY(20px,-20px);
-	transition: all 0.4s ease-in-out;
-}
-*/
-.Cookie-Info-buttons
-{
-	border: 2px dotted rgb(119, 119, 119);
-	background: rgb(255, 255, 255);
-	color: rgb(0, 0, 0); 
-	width: 200px;
-	height: 40px;
-	padding: 0px;
-	margin: auto;
-	font-size: 20px; /* 1em; */
-	text-align: center;
-	font-weight: 600;
-}
-/*
-.Cookie-Info-button:hover 
-{
-	background: rgb(0, 0, 0);
-	color: rgb(255, 255, 255);
-}
-*/
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
 
 	#header
 	{
-		background: rgb(50, 74, 116);
+		background: rgb(102, 0, 0);
 		position: fixed;
 		width: 100%;
 		height: 80px;
@@ -369,7 +210,7 @@ canvas {
 	{
 		overflow: hidden;
 		padding: 0em 0em;
-		width: 80%;
+		width: 90%;
 		
 	}
 
@@ -380,10 +221,14 @@ canvas {
 	#content
 	{
 		float: left;
-		width: 35%;
+		width: auto;
 		text-align: center;
-		padding-top: 150px;
+		padding-top: 0px;
 		padding-right: 10px;
+		border: 1px black solid;
+		margin: 10px;
+		margin-top: 100px;
+		height: 530px;
 		
 	}
 	
@@ -400,8 +245,35 @@ canvas {
 	
 	#content .byline
 	{
-		
 		font-size: 1.5em;
+	}
+	#content table {
+		width: auto;
+		padding: 5px;
+		margin: 20px;
+	}
+	#content table tr {
+		margin: 10px 0px;
+	}
+	#content table td {
+		height: 50px;
+		margin: 20px;
+		/* border: 1px black solid;
+		background: rgb(207, 207, 207); */
+	}
+	
+	input {
+		height: 80%;
+		border: 0px;
+		width: 100px;
+		background: #EEEEEE;
+		border: 2px rgb(0, 0, 0) dotted;
+	}
+	button {
+		background: white;
+		border: 1px black solid;
+		width: 100%;
+		height: 90%;
 	}
 
 /*********************************************************************************/
@@ -411,15 +283,17 @@ canvas {
 	#sidebar
 	{
 		float: right;
-		
-		width: 60%;
+		border: 1px black solid;
+		width: auto;
 		padding: 0px;
-		margin: 0px;
+		margin: 20px;
+		margin-top: 100px; 
+		height: 530px;
 	}
 	#sidebar img {
-		width: 100%;
-		margin: 0px;
-		margin-top: 100px;
+		width: auto;
+		margin: 20px;
+		margin-top: 30px;
 	}
 
 

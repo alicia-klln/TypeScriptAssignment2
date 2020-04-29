@@ -24,9 +24,9 @@ Released   : 20131201
 </head>
 <body> <!-- onload="PopUp()" -->
 <div id="background">
-	<canvas id="canvas"></canvas>
+	<!--<canvas id="canvas"></canvas>
 
-	<!--  --><div id="Cookie-Bar">
+	<div id="Cookie-Bar">
 		<h2>Cookie-Bar</h2>
 		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
 			sed diam nonumy eirmod tempor invidunt ut labore et 
@@ -40,7 +40,7 @@ Released   : 20131201
 		
 		</div>
 	</div> 
-	<!--  --><div id="Cookie-Info">
+	<div id="Cookie-Info">
 		<h2>Cookie Details</h2> <br>
 		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
 			sed diam nonumy eirmod tempor invidunt ut labore et 
@@ -67,9 +67,9 @@ Released   : 20131201
 		<br>
 		<div id="cookieAccept" class="Cookie-Info-buttons">
 			<p >Accept</p>
-		</div>
-	</div>
-	 <!-- --> 
+		</div> 
+	</div> -->
+	 <!--
 	 <div id="nameInput">
 		 <h2>Hej du!</h2>
     	<p>
@@ -82,7 +82,7 @@ Released   : 20131201
 			<button id="persButton" type="submit">Bestätigen</button>
 			</form>
 		
-	</div> 
+	</div>  --> 
 	<div id="header">
 
 </div>
@@ -90,10 +90,34 @@ Released   : 20131201
 <div id="page" class="container">
 	<div id="content">
 		<div class="title">
-			<h2 id="h2" class="personalisierung">Welcome to our website, </h2>
-			<span class="byline">Mauris vulputate dolor sit amet nibh</span>
+			<h2 id="h2" class="personalisierung">Rechentabelle</h2>
+			
 		</div>
-		<p>This is <strong>Swarming</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
+		<table>
+			<thead>
+				Trage zwei Zahlen ein um sie zu addieren!
+			</thead>
+			<tr>
+				<td><input id="input1l" type="number"></td>
+				<td><input id="input1r" type="number"></td>
+				<td><button id="btn1">Ergebnis berechnen</button></td>
+				<td id="berechnet1">Ergebnis:</td>
+			</tr>
+			<tr>
+				<td><input id="input2l" type="number"></td>
+				<td><input id="input2r" type="number"></td>
+				<td><button id="btn2">Ergebnis berechnen</button></td>
+				<td id="berechnet2">Ergebnis:</td>
+			</tr>
+			<tr>
+				<td><input id="input3l" type="number"></td>
+				<td><input id="input3r" type="number"></td>
+				<td><button id="btn3">Ergebnis berechnen</button></td>
+				<td id="berechnet3">Ergebnis:</td>
+			</tr>
+			
+		</table>
+
 	</div>
 	<div id="sidebar"><img src="images/pic05.jpg" alt="" /></div>
 </div>
