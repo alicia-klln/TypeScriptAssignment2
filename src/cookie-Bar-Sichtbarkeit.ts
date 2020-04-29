@@ -61,4 +61,5 @@ export function cookieBarSichtbarkeit() {
         accept.style.background = "";
         accept.style.color = "";
     }
+    
 }
