@@ -9,8 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/jquery": "^3.3.36",
+    "jquery": "^3.5.0",
     "rollup": "^2.1.0",
-    "rollup-plugin-typescript2": "^0.26.0",
+    "rollup-plugin-typescript2": "^0.26.0"
+  },
+  "devDependencies": {
     "typescript": "^3.8.3"
   }
 }

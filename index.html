@@ -24,65 +24,8 @@ Released   : 20131201
 </head>
 <body> <!-- onload="PopUp()" -->
 <div id="background">
-	<!--<canvas id="canvas"></canvas>
-
-	<div id="Cookie-Bar">
-		<h2>Cookie-Bar</h2>
-		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-			sed diam nonumy eirmod tempor invidunt ut labore et 
-			dolore magna aliquyam erat, sed diam voluptua. 
-			At vero eos et accusam et justo duo dolores et ea rebum. 
-			Stet clita kasd gubergren, no sea takimata sanctus est 
-			Lorem ipsum dolor sit amet.</p>
-		<div id="button">
-			<p id="left_button">Accept</p>
-			<p id="right_button">Get more information</p>
-		
-		</div>
-	</div> 
-	<div id="Cookie-Info">
-		<h2>Cookie Details</h2> <br>
-		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-			sed diam nonumy eirmod tempor invidunt ut labore et 
-			dolore magna aliquyam erat, sed diam voluptua. 
-			At vero eos et accusam et justo duo dolores et ea rebum. 
-			Stet clita kasd gubergren, no sea takimata sanctus est 
-			Lorem ipsum dolor sit amet.
-		</p>
-		<br>		
-		<div id="form">
-			<form>
-				<h3><i>Hey you!</i></h3>
-				<h3>Which cookies are allowed?</h3> <br>
-				<fieldset>
-				  <input type="checkbox" id="bc" name="Basis-Cookies" value="Basis-Cookies" checked disabled>
-				  <label for="bc"> Basis-Cookies</label> 
-				  <input type="checkbox" id="mc" name="Marketing-Cookies" value="Marketing-Cookies">
-				  <label for="mc"> Marketing-Cookies</label>
-				  <input type="checkbox" id="tc" name="Tracking-Cookies" value="Tracking-Cookies">
-				  <label for="tc"> Tracking-Cookies</label> 
-				</fieldset>
-			  </form>
-		</div>
-		<br>
-		<div id="cookieAccept" class="Cookie-Info-buttons">
-			<p >Accept</p>
-		</div> 
-	</div> -->
-	 <!--
-	 <div id="nameInput">
-		 <h2>Hej du!</h2>
-    	<p>
-			Wir würden Dich gerne besser kennen lernen <br>
-			Bitte gib hier deinen Vornamen ein. <br>
-			Dann können wir dich direkt ansprechen :).
-		</p>
-		<form onsubmit="return namensEingabe()">
-			<input id="vorname" name="vorname" type="text" autocomplete="off" minlength="3" required/>
-			<button id="persButton" type="submit">Bestätigen</button>
-			</form>
-		
-	</div>  --> 
+	
+</div>
 	<div id="header">
 
 </div>
@@ -90,7 +33,7 @@ Released   : 20131201
 <div id="page" class="container">
 	<div id="content">
 		<div class="title">
-			<h2 id="h2" class="personalisierung">Rechentabelle</h2>
+			<h2 id="h2">Rechentabelle</h2>
 			
 		</div>
 		<table>
@@ -101,25 +44,39 @@ Released   : 20131201
 				<td><input id="input1l" type="number"></td>
 				<td><input id="input1r" type="number"></td>
 				<td><button id="btn1">Ergebnis berechnen</button></td>
-				<td id="berechnet1">Ergebnis:</td>
+				<td id="berechnet1">Ergebnis: <input class="ergebnis"  id="ergebnisInput1"></td>
 			</tr>
 			<tr>
 				<td><input id="input2l" type="number"></td>
 				<td><input id="input2r" type="number"></td>
 				<td><button id="btn2">Ergebnis berechnen</button></td>
-				<td id="berechnet2">Ergebnis:</td>
+				<td id="berechnet2">Ergebnis: <input class="ergebnis"  id="ergebnisInput2"></td>
 			</tr>
 			<tr>
 				<td><input id="input3l" type="number"></td>
 				<td><input id="input3r" type="number"></td>
 				<td><button id="btn3">Ergebnis berechnen</button></td>
-				<td id="berechnet3">Ergebnis:</td>
+				<td id="berechnet3">Ergebnis: <input class="ergebnis" id="ergebnisInput3"></td>
 			</tr>
-			
 		</table>
+		<button id="deleteAll">Alle Werte zurücksetzen</button>
+		<div id="absatz">
+			<p>Absatz1</p>
+		</div>
+
+	
 
 	</div>
-	<div id="sidebar"><img src="images/pic05.jpg" alt="" /></div>
+	<div id="sidebar">
+		<!-- <img src="images/pic05.jpg" alt="" /> -->
+		<h2 id="h2" >Zufallszahlen-Spiel</h2>
+		<input id="ausgabezahl1" readonly>
+		<input id="ausgabezahl2" readonly>
+		<button id="wuerfelbutton">Würfeln</button>
+		<h2 id="gewinnbotschaft"></h2>
+		
+
+	</div>
 </div>
 </div>
 
@@ -127,7 +84,8 @@ Released   : 20131201
 <div id="copyright" class="container">
 	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
 </div>
-	<script type="text/javascript" src="./build/bundle.js"></script>
+	<!-- <script type="text/javascript" src="firsttry.js"></script> -->
+	<script type="text/javascript" src="firsttry.js"></script>
 </div>
 </body>
 </html>
