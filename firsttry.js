@@ -88,25 +88,63 @@ function deletedAll() {
 wuerfelButton = document.getElementById("wuerfelbutton");
 ausgabeZahl1 = document.getElementById("ausgabezahl1");
 ausgabeZahl2 = document.getElementById("ausgabezahl2");
+ausgabeZahl3 = document.getElementById("ausgabezahl3");
+ausgabeZahl4 = document.getElementById("ausgabezahl4");
+ausgabeZahl5 = document.getElementById("ausgabezahl5");
+ausgabeZahl6 = document.getElementById("ausgabezahl6");
 
 wuerfelButton.addEventListener('click', wuerfeln);
+
+clicked = 0;
+pasch = 0;
+dreierPasch = 0;
+viererPasch = 0;
+fünferPasch = 0;
+kniffel = 0;
 
 function wuerfeln () {
     var zufallsZahl1;
     var zufallsZahl2;
+    var zufallsZahl3;
+
     zufallsZahl1 = Math.floor(Math.random()* 6) + 1;
     zufallsZahl2 = Math.floor(Math.random()* 6) + 1;
-    console.log(zufallsZahl1);
+    zufallsZahl3 = Math.floor(Math.random()* 6) + 1;
+
+    console.log(zufallsZahl1 + " & " + zufallsZahl2 + " & " + zufallsZahl3);
+    
     ausgabeZahl1.value = zufallsZahl1;
     ausgabeZahl2.value = zufallsZahl2;
+    ausgabeZahl3.value = zufallsZahl3;
     
-    if (zufallsZahl1 = zufallsZahl2){
-        const gewinnBotschaft = document.getElementById("gewinnbotschaft");
-        gewinnBotschaft.innerHTML = "Super, du hast zwei gleiche Zahlen gewürfelt";
-        console.log("Super, du hast zwei gleiche Zahlen gewürfelt");
-    } else {
-        gewinnBotschaft.innerHTML = "";
+    clicked++;
+        
+    if (zufallsZahl1 === zufallsZahl2 | 
+        zufallsZahl1 === zufallsZahl3 |  
+        zufallsZahl2 === zufallsZahl3 ){
+        pasch+= 1;
+        console.log("Juhu ein Pasch!");        
     }
+    if (zufallsZahl1 === zufallsZahl2 && zufallsZahl1 === zufallsZahl3 && zufallsZahl2 === zufallsZahl3){
+        dreierPasch+= 1;  
+        console.log("Super, sogar ein Dreierpasch!");  
+             
+    }
+
+    document.getElementById("wurfAnzahl").innerHTML = clicked;
+    document.getElementById("paschAnzahl").innerHTML = pasch;
+    document.getElementById("dreierAnzahl").innerHTML = dreierPasch;
+    
+        // var clicked;
+        // clicked = 0;
+        
+
+        // if (gewinnBotschaft.innerHTML = "Super, du hast zwei gleiche Zahlen gewürfelt") {
+        //     clicked++;
+        //     console.log("geklickt: " + clicked);
+        //     gewinnBotschaft.innerHTML = "";
+        // }
+    
 
 }
 
