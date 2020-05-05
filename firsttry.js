@@ -1,15 +1,3 @@
-
-//Inhalte der spalten mit Klasse one verändern
-var leftSide = document.querySelectorAll(".one");
-for (var i = 0;i < leftSide.length; i++) {
-    leftSide[i].style.background = "wheat";
-    console.log("left");
-}
-var rightSide = document.querySelectorAll(".two");
-for (var i = 0;i < rightSide.length; i++) {
-    rightSide[i].style.background = "pink";
-    console.log("huhu");
-}
 button1 = document.getElementById("btn1");
 button2 = document.getElementById("btn2");
 button3 = document.getElementById("btn3");

@@ -1,16 +1,10 @@
-
-
 const button1 = document.getElementById("btn1");
 const button2 = document.getElementById("btn2");
 const button3 = document.getElementById("btn3");
 
-var berechnet1 = document.querySelector<HTMLInputElement>("#ergebnisInput1");
-var berechnet2 = document.querySelector<HTMLInputElement>("#ergebnisInput2");
-var berechnet3 = document.querySelector<HTMLInputElement>("#ergebnisInput3");
-
-var wertberechnet1 = parseInt(berechnet1!.value);
-var wertberechnet2 = parseInt(berechnet2!.value);
-var wertberechnet3 = parseInt(berechnet3!.value);
+var berechnet1 = document.getElementById("ergebnisInput1");
+var berechnet2 = document.getElementById("ergebnisInput2");
+var berechnet3 = document.getElementById("ergebnisInput3");
 
 button1!.addEventListener('click', addiereZahlen1);
 button2!.addEventListener('click', addiereZahlen2);
@@ -19,62 +13,67 @@ button3!.addEventListener('click', addiereZahlen3);
 function addiereZahlen1 (){
     var clicked;
     clicked = 0;
-    console.log(clicked);
 
     if (clicked < 1) {
-        const myInput1l: number = parseInt(document.querySelector<HTMLInputElement>("#input1l")!.value);
-        const myInput1r: number = parseInt(document.querySelector<HTMLInputElement>("#input1r")!.value);
-        const ergebnis1: number = myInput1l + myInput1r;
+        const myInput1l = parseInt(document.getElementById("input1l")!.value);
+        const myInput1r = parseInt(document.getElementById("input1r")!.value);
+        const ergebnis1 = myInput1l + myInput1r;
         clicked++;
         console.log("Ergebnis 1: " + ergebnis1);
-        wertberechnet1 = ergebnis1;
+        berechnet1!.value = ergebnis1;
 
     }else {
-        wertberechnet1 = 0;
+        berechnet1!.value = "";
     }
 }
 
 function addiereZahlen2 (){
     
-    var clicked: number;
+    var clicked;
     clicked = 0;
-    console.log(clicked);
 
     if (clicked < 1) {
-        const myInput2l: number  = parseInt(document.querySelector<HTMLInputElement>("#input2l")!.value);
-        const myInput2r: number  = parseInt(document.querySelector<HTMLInputElement>("#input2r")!.value);
-        const ergebnis2: number  = myInput2l + myInput2r;
+        const myInput2l = parseInt(document.getElementById("input2l")!.value);
+        const myInput2r = parseInt(document.getElementById("input2r")!.value);
+        const ergebnis2 = myInput2l + myInput2r;
         clicked++;
         console.log("Ergebnis 2: " + ergebnis2);
-        wertberechnet2 = ergebnis2;
+        berechnet2!.value = ergebnis2;
     }else {
-        wertberechnet2 = 0;
+        berechnet2!.value = "";
     }
 }
+
 
 function addiereZahlen3 (){
     var clicked;
     clicked = 0;
-    console.log(clicked);
 
     if (clicked < 1) {
-        const myInput3l: number = parseInt(document.querySelector<HTMLInputElement>("#input3l")!.value);
-        const myInput3r: number = parseInt(document.querySelector<HTMLInputElement>("#input3r")!.value);
-        const ergebnis3: number = myInput3l + myInput3r;
+        const myInput3l = parseInt(document.getElementById("input3l")!.value);
+        const myInput3r = parseInt(document.getElementById("input3r")!.value);
+        const ergebnis3 = myInput3l + myInput3r;
         clicked++;
         console.log("Ergebnis 3: " + ergebnis3);
-        wertberechnet3 = ergebnis3;
+        berechnet3!.value = ergebnis3;
     }else {
-        wertberechnet3 = 0;
-}
+        berechnet3!.value = "";
+    }
 }
 const deleteAll = document.getElementById("deleteAll");
 
 deleteAll!.addEventListener('click', deletedAll);
 function deletedAll() {
-    wertberechnet1 = 0;
-    wertberechnet2 = 0;
-    wertberechnet3 = 0;  
+    berechnet1!.value = "";  
+    berechnet2!.value = "";  
+    berechnet3!.value = "";   
+    document.getElementById("input1l")!.value = "";
+    document.getElementById("input1r")!.value = "";
+    document.getElementById("input2l")!.value = "";
+    document.getElementById("input2r")!.value = "";
+    document.getElementById("input3l")!.value = "";
+    document.getElementById("input3r")!.value = "";
+
 }
 
 

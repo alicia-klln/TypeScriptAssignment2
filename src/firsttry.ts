@@ -3,8 +3,8 @@
 // const button3 = document.getElementById("btn3");
 
 // const berechnet1 = document.getElementById("ergebnisInput1");
-// const berechnet2 = document.querySelector<HTMLElement>("#ergebnisInput2");
-// const berechnet3 = document.querySelector<HTMLElement>("#ergebnisInput3");
+// const berechnet2 = document.getElementById("ergebnisInput2");
+// const berechnet3 = document.getElementById("ergebnisInput3");
 
 // button1!.addEventListener('click', addiereZahlen1);
 // button2!.addEventListener('click', addiereZahlen2);
