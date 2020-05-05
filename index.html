@@ -28,7 +28,8 @@ Released   : 20131201
 	</div>
 	<div id="header">
 		<h2 id="h2" >WILLKOMMEN - Hier kannst du entweder addieren oder eine runde Spielen!</h2>
-		Bitte gib deinen Namen ein! <input id="namenseingabe">
+		
+		Bitte gib deinen Namen ein! <input id="namenseingabe" minlength="3" required/>
 		<button id="namenbestätigen">Eingabe bestätigen</button>
 	</div>
 	<div id="page-wrapper">
@@ -113,6 +114,11 @@ Released   : 20131201
 				<button id="wuerfelbutton">Würfeln</button>
 			
 				<table>
+					
+					<tr>
+						<td id="anrede2" colspan="2"></td>
+						
+					</tr>
 					<tr>
 						<td>Anzahl Würfe:</td>
 						<td><input id="wurfAnzahl" readonly></td>

@@ -1,3 +1,26 @@
+//Namen speichern
+const namebestaetigen = document.getElementById("namenbestätigen");
+namebestaetigen!.addEventListener('click', uebergebeName);
+
+function uebergebeName() {
+    const name = document.getElementById("namenseingabe")!.value;
+    console.log(name);   
+
+    var clicked;
+    clicked = 0;
+
+    if (clicked < 1) {
+        if (name === "") {
+            alert("Gib bitte deinen Namen ein.");
+        }else {
+            var anrede = document.getElementById("h2");
+            var anrede2 = document.getElementById("anrede2");
+            clicked++;
+            anrede!.innerHTML = "Hallo " + name + "! Schön, dass du da bist!";
+            anrede2!.innerHTML = "Überprüfe deine Ergebnisse, " + name;
+        }    
+    }
+}
 const button1 = document.getElementById("btn1");
 const button2 = document.getElementById("btn2");
 const button3 = document.getElementById("btn3");
@@ -26,7 +49,6 @@ function addiereZahlen1 (){
         berechnet1!.value = "";
     }
 }
-
 function addiereZahlen2 (){
     
     var clicked;
@@ -43,8 +65,6 @@ function addiereZahlen2 (){
         berechnet2!.value = "";
     }
 }
-
-
 function addiereZahlen3 (){
     var clicked;
     clicked = 0;
@@ -63,6 +83,7 @@ function addiereZahlen3 (){
 const deleteAll = document.getElementById("deleteAll");
 
 deleteAll!.addEventListener('click', deletedAll);
+
 function deletedAll() {
     berechnet1!.value = "";  
     berechnet2!.value = "";  
