@@ -36,14 +36,14 @@ function addiereZahlen1 (){
 
 function addiereZahlen2 (){
     
-    var clicked;
+    var clicked: number;
     clicked = 0;
     console.log(clicked);
 
     if (clicked < 1) {
-        const myInput2l = parseInt(document.querySelector<HTMLInputElement>("#input2l")!.value);
-        const myInput2r = parseInt(document.querySelector<HTMLInputElement>("#input2r")!.value);
-        const ergebnis2 = myInput2l + myInput2r;
+        const myInput2l: number  = parseInt(document.querySelector<HTMLInputElement>("#input2l")!.value);
+        const myInput2r: number  = parseInt(document.querySelector<HTMLInputElement>("#input2r")!.value);
+        const ergebnis2: number  = myInput2l + myInput2r;
         clicked++;
         console.log("Ergebnis 2: " + ergebnis2);
         wertberechnet2 = ergebnis2;
@@ -60,7 +60,7 @@ function addiereZahlen3 (){
     if (clicked < 1) {
         const myInput3l: number = parseInt(document.querySelector<HTMLInputElement>("#input3l")!.value);
         const myInput3r: number = parseInt(document.querySelector<HTMLInputElement>("#input3r")!.value);
-        const ergebnis3 = myInput3l + myInput3r;
+        const ergebnis3: number = myInput3l + myInput3r;
         clicked++;
         console.log("Ergebnis 3: " + ergebnis3);
         wertberechnet3 = ergebnis3;
@@ -76,6 +76,9 @@ function deletedAll() {
     wertberechnet2 = 0;
     wertberechnet3 = 0;  
 }
+
+
+
 
 //Zufallszahl würfeln
 
