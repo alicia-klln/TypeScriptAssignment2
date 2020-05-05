@@ -23,86 +23,121 @@ Released   : 20131201
 
 </head>
 <body> <!-- onload="PopUp()" -->
-<div id="background">
-	
-</div>
-	<div id="header">
-
-</div>
-<div id="page-wrapper">
-<div id="page" class="container">
-	<div id="content">
-		<div class="title">
-			<h2 id="h2">Rechentabelle</h2>
-			
-		</div>
-		<table>
-			<thead>
-				Trage zwei Zahlen ein um sie zu addieren!
-			</thead>
-			<tr>
-				<td><input id="input1l" type="number"></td>
-				<td><input id="input1r" type="number"></td>
-				<td><button id="btn1">Ergebnis berechnen</button></td>
-				<td id="berechnet1">Ergebnis: <input class="ergebnis"  id="ergebnisInput1"></td>
-			</tr>
-			<tr>
-				<td><input id="input2l" type="number"></td>
-				<td><input id="input2r" type="number"></td>
-				<td><button id="btn2">Ergebnis berechnen</button></td>
-				<td id="berechnet2">Ergebnis: <input class="ergebnis"  id="ergebnisInput2"></td>
-			</tr>
-			<tr>
-				<td><input id="input3l" type="number"></td>
-				<td><input id="input3r" type="number"></td>
-				<td><button id="btn3">Ergebnis berechnen</button></td>
-				<td id="berechnet3">Ergebnis: <input class="ergebnis" id="ergebnisInput3"></td>
-			</tr>
-		</table>
-		<button id="deleteAll">Alle Werte zurücksetzen</button>
-		<div id="absatz">
-			<p>Absatz1</p>
-		</div>
-
-	
-
+	<div id="background">
+		
 	</div>
-	<div id="sidebar">
-		<!-- <img src="images/pic05.jpg" alt="" /> -->
-		
-
-		<h2 id="h2" >Zufallszahlen-Spiel</h2>
-		<div id="innen">	
-			<input id="ausgabezahl1" readonly>
-			<input id="ausgabezahl2" readonly>
-			<input id="ausgabezahl3" readonly>
-			<button id="wuerfelbutton">Würfeln</button>
-		
+	<div id="header">
+		<h2 id="h2" >WILLKOMMEN - Hier kannst du entweder addieren oder eine runde Spielen!</h2>
+		Bitte gib deinen Namen ein! <input id="namenseingabe">
+		<button id="namenbestätigen">Eingabe bestätigen</button>
+	</div>
+	<div id="page-wrapper">
+	<div id="page" class="container">
+		<div id="content">
+			<div class="title">
+				<h2 id="h2">Rechentabelle</h2>
+			</div>
 			<table>
+				<thead>
+					Trage zwei Zahlen ein um sie zu addieren!
+				</thead>
 				<tr>
-					<td>Anzahl Würfe:</td>
-					<td id="wurfAnzahl"></td>
+					<td><input id="input1l" type="number"></td>
+					<td><input id="input1r" type="number"></td>
+					<td><button id="btn1">Ergebnis berechnen</button></td>
+					<td id="berechnet1">Ergebnis: <input  type="number" class="ergebnis"  id="ergebnisInput1" readonly></td>
 				</tr>
 				<tr>
-					<td>Anzahl Päsche:</td>
-					<td id="paschAnzahl"></td>
+					<td><input id="input2l" type="number"></td>
+					<td><input id="input2r" type="number"></td>
+					<td><button id="btn2">Ergebnis berechnen</button></td>
+					<td id="berechnet2">Ergebnis: <input class="ergebnis"  id="ergebnisInput2" readonly></td>
 				</tr>
 				<tr>
-					<td>Anzahl Triple:</td>
-					<td id="dreierAnzahl"></td>
+					<td><input id="input3l" type="number"></td>
+					<td><input id="input3r" type="number"></td>
+					<td><button id="btn3">Ergebnis berechnen</button></td>
+					<td id="berechnet3">Ergebnis: <input class="ergebnis" id="ergebnisInput3" readonly></td>
 				</tr>
 			</table>
+			<button id="deleteAll">Alle Werte zurücksetzen</button>
+
+		</div>
+
+		<!-- <div id="auswertung">
+		<h2 id="h2" >SPIEL-AUSWERTUNG</h2>
+		<table>
+			<tr>
+				<td id="name1">Spielername:</td>
+				<td id="wurfAnzahl">Anzahl Würfe</td>
+				<td id="paschAnzahl">Anzahl Päsche</td>
+				<td id="dreierAnzahl">Anzahl Triple</td>
+			</tr>
+			<tr>
+				<td id="spieler-eins"></td>
+				<td id="wurf-eins"></td>
+				<td id="pasch-eins"></td>
+				<td id="dreier-eins"></td>
+			</tr>
+			<tr>
+				<td id="spieler-zwei"></td>
+				<td id="wurf-zwei"></td>
+				<td id="pasch-zwei"></td>
+				<td id="dreier-zwei"></td>
+			</tr>
+			<tr>
+				<td id="spieler-drei"></td>
+				<td id="wurf-drei"></td>
+				<td id="pasch-drei"></td>
+				<td id="dreier-drei"></td>
+			</tr>
+			<tr>
+				<td id="spieler-vier"></td>
+				<td id="wurf-vier"></td>
+				<td id="pasch-vier"></td>
+				<td id="dreier-vier"></td>
+			</tr>
+		</table>
+		</div>	 -->
+
+		
+		<div id="sidebar">
+			<!-- <img src="images/pic05.jpg" alt="" /> -->
+			
+
+			<h2 id="h2" >ZUFALLSZAHLEN-SPIEL</h2>
+			<div id="innen">	
+				<input id="ausgabezahl1" readonly>
+				<input id="ausgabezahl2" readonly>
+				<input id="ausgabezahl3" readonly>
+				<button id="wuerfelbutton">Würfeln</button>
+			
+				<table>
+					<tr>
+						<td>Anzahl Würfe:</td>
+						<td><input id="wurfAnzahl" readonly></td>
+					</tr>
+					<tr>
+						<td>Anzahl Päsche:</td>
+						<td><input id="paschAnzahl" readonly></td>
+					</tr>
+					<tr>
+						<td>Anzahl Triple:</td>
+						<td><input id="dreierAnzahl" readonly></td>
+					</tr>
+				</table>
+				<button id="resetbutton">Werte zurücksetzen</button>
+			</div>
 		</div>
 	</div>
-</div>
-</div>
+	</div>
 
 
-<div id="copyright" class="container">
-	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
-</div>
-	<!-- <script type="text/javascript" src="firsttry.js"></script> -->
-	<script type="text/javascript" src="firsttry.js"></script>
-</div>
+	<div id="copyright" class="container">
+		<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+	</div>
+		<!-- <script type="text/javascript" src="firsttry.js"></script> -->
+		<script type="text/javascript" src="./build/index.js"></script>
+	</div>
 </body>
 </html>

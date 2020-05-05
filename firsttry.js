@@ -83,24 +83,36 @@ function deletedAll() {
     berechnet3.value = "";   
 }
 
+//Namen eingeben
+eingabeBestätigen = document.getElementById("namenbestätigen");
+const name = document.getElementById("namenseingabe");
+
+eingabeBestätigen.addEventListener('click', speichern, eintragen);
+function speichern() {
+    var name = localStorage.getItem(name).value;
+    if (name == null) {name = "unbekannt";}
+    console.log(name);
+    localStorage.setItem('name', name);
+    localStorage.getItem('Name');
+}
+function eintragen() {
+    document.getElementById("name1").value = Name;
+}
+
 //Zufallszahl würfeln
 
 wuerfelButton = document.getElementById("wuerfelbutton");
 ausgabeZahl1 = document.getElementById("ausgabezahl1");
 ausgabeZahl2 = document.getElementById("ausgabezahl2");
 ausgabeZahl3 = document.getElementById("ausgabezahl3");
-ausgabeZahl4 = document.getElementById("ausgabezahl4");
-ausgabeZahl5 = document.getElementById("ausgabezahl5");
-ausgabeZahl6 = document.getElementById("ausgabezahl6");
+resetButton = document.getElementById("resetbutton");
 
 wuerfelButton.addEventListener('click', wuerfeln);
 
-clicked = 0;
+
+wurf = 0;
 pasch = 0;
 dreierPasch = 0;
-viererPasch = 0;
-fünferPasch = 0;
-kniffel = 0;
 
 function wuerfeln () {
     var zufallsZahl1;
@@ -117,7 +129,7 @@ function wuerfeln () {
     ausgabeZahl2.value = zufallsZahl2;
     ausgabeZahl3.value = zufallsZahl3;
     
-    clicked++;
+    wurf++;
         
     if (zufallsZahl1 === zufallsZahl2 | 
         zufallsZahl1 === zufallsZahl3 |  
@@ -130,10 +142,27 @@ function wuerfeln () {
         console.log("Super, sogar ein Dreierpasch!");  
              
     }
+    if (wurf === pasch && wurf === dreierPasch && pasch === dreierPasch) {
+        alert("Oha, was ein Glück. ")
+    }
 
-    document.getElementById("wurfAnzahl").innerHTML = clicked;
+    document.getElementById("wurfAnzahl").innerHTML = wurf;
     document.getElementById("paschAnzahl").innerHTML = pasch;
     document.getElementById("dreierAnzahl").innerHTML = dreierPasch;
+
+    resetButton.addEventListener('click', reset);
+    function reset() {
+        wurf = 0;
+        pasch = 0;
+        dreierPasch = 0;
+        ausgabeZahl1.value = "";
+        ausgabeZahl2.value = "";
+        ausgabeZahl3.value = "";
+        document.getElementById("wurfAnzahl").innerHTML = "";
+        document.getElementById("paschAnzahl").innerHTML = "";
+        document.getElementById("dreierAnzahl").innerHTML = "";
+    }
+
     
         // var clicked;
         // clicked = 0;
