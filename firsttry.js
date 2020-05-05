@@ -1,3 +1,4 @@
+// Versuchsdatei
 button1 = document.getElementById("btn1");
 button2 = document.getElementById("btn2");
 button3 = document.getElementById("btn3");

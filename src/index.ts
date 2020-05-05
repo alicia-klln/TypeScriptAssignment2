@@ -6,7 +6,7 @@ function uebergebeName() {
     const name = document.getElementById("namenseingabe")!.value;
     console.log(name);   
 
-    var clicked;
+    var clicked: number;
     clicked = 0;
 
     if (clicked < 1) {
@@ -21,6 +21,7 @@ function uebergebeName() {
         }    
     }
 }
+// Rechentabelle
 const button1 = document.getElementById("btn1");
 const button2 = document.getElementById("btn2");
 const button3 = document.getElementById("btn3");
@@ -33,6 +34,7 @@ button1!.addEventListener('click', addiereZahlen1);
 button2!.addEventListener('click', addiereZahlen2);
 button3!.addEventListener('click', addiereZahlen3);
 
+//Berechnung 1. Zeile
 function addiereZahlen1 (){
     var clicked;
     clicked = 0;
@@ -49,6 +51,7 @@ function addiereZahlen1 (){
         berechnet1!.value = "";
     }
 }
+//Berechnung 2. Zeile
 function addiereZahlen2 (){
     
     var clicked;
@@ -65,6 +68,7 @@ function addiereZahlen2 (){
         berechnet2!.value = "";
     }
 }
+//Berechnung 3. Zeile
 function addiereZahlen3 (){
     var clicked;
     clicked = 0;
@@ -80,6 +84,7 @@ function addiereZahlen3 (){
         berechnet3!.value = "";
     }
 }
+//Alle Inhalte löschen
 const deleteAll = document.getElementById("deleteAll");
 
 deleteAll!.addEventListener('click', deletedAll);
@@ -103,9 +108,9 @@ function deletedAll() {
 //Zufallszahl würfeln
 
 const wuerfelButton = document.getElementById("wuerfelbutton");
-var ausgabeZahl1 = document.querySelector<HTMLInputElement>("#ausgabezahl1");
-var ausgabeZahl2 = document.querySelector<HTMLInputElement>("#ausgabezahl2");
-var ausgabeZahl3 = document.querySelector<HTMLInputElement>("#ausgabezahl3");
+var ausgabeZahl1 = document.getElementById("ausgabezahl1");
+var ausgabeZahl2 = document.getElementById("ausgabezahl2");
+var ausgabeZahl3 = document.getElementById("ausgabezahl3");
 const resetButton = document.getElementById("resetbutton");
 
 wuerfelButton!.addEventListener('click', wuerfeln);
