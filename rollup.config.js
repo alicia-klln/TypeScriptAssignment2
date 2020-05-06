@@ -2,10 +2,10 @@
 import typescript from "rollup-plugin-typescript2";
 
 export default {
-    input: "index.ts",
+    input: "./src/index.ts",
     output: {
         format: "iife",
-        file: "./build/index.js"
+        file: "./build/bundle.js"
     },
     plugins: [
         typescript({
