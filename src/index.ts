@@ -122,22 +122,25 @@ var pasch: number = 0;
 var dreierPasch: number = 0;
 
 function wuerfeln () {
-    var zufallsZahl1: any;
-    var zufallsZahl2: any;
-    var zufallsZahl3: any;
+    var zufallsZahl1: number;
+    var zufallsZahl2: number;
+    var zufallsZahl3: number;
 
     zufallsZahl1 = Math.floor(Math.random()* 6) + 1;
     zufallsZahl2 = Math.floor(Math.random()* 6) + 1;
     zufallsZahl3 = Math.floor(Math.random()* 6) + 1;
 
     console.log(zufallsZahl1 + " & " + zufallsZahl2 + " & " + zufallsZahl3);
-    
-    var ausgabeZahl1Value: any = ausgabeZahl1!.value;
-    ausgabeZahl1Value = zufallsZahl1;
-    var ausgabeZahl2Value: any = ausgabeZahl2!.value;
-    ausgabeZahl2Value = zufallsZahl2;
-    var ausgabeZahl3Value: any = ausgabeZahl3!.value;
-    ausgabeZahl3Value = zufallsZahl3;
+
+    var zufallsZahl1String = zufallsZahl1.toString();
+    ausgabeZahl1!.value = zufallsZahl1String;
+
+    var zufallsZahl2String = zufallsZahl2.toString();
+    ausgabeZahl2!.value = zufallsZahl2String;
+
+    var zufallsZahl3String = zufallsZahl3.toString();
+    ausgabeZahl3!.value = zufallsZahl3String;
+
     wurf++;
     // console.log("Zahl1 " + zufallsZahl1);
     // ausgabeZahl1 = zufallsZahl1;
@@ -157,39 +160,34 @@ function wuerfeln () {
         alert("Oha, was ein Glück. ")
     }
 
-    var wurfAnzahl = document.querySelector<HTMLInputElement>("#wurfAnzahl")!.value;
-    var wurfValue: any = wurfAnzahl;
-    wurfValue = wurf;   
+    var wurfAnzahl = document.querySelector<HTMLInputElement>("#wurfAnzahl"); 
+    var wurfString = wurf.toString();
+    wurfAnzahl!.value = wurfString;
 
-    var paschAnzahl = document.querySelector<HTMLInputElement>("#paschAnzahl")!.value;
-    var paschValue: any = paschAnzahl;
-    paschValue = pasch;  
+    var paschAnzahl = document.querySelector<HTMLInputElement>("#paschAnzahl");
+    var paschString = pasch.toString();
+    paschAnzahl!.value = paschString;
 
-    var dreierAnzahl = document.querySelector<HTMLInputElement>("#dreierAnzahl")!.value;
-    var dreierValue: any = dreierAnzahl;
-    dreierValue = dreierPasch;  
+    var dreierAnzahl = document.querySelector<HTMLInputElement>("#dreierAnzahl");
+    var dreierString = dreierPasch.toString();
+    dreierAnzahl!.value = dreierString;  
     
-    console.log(wurfValue);
-    console.log(paschValue);
-    console.log(dreierValue);
+    console.log(wurfString);
+    console.log(paschString);
+    console.log(dreierString);
 
     resetButton!.addEventListener('click', reset);
     function reset() {
         wurf = 0;
         pasch = 0;
         dreierPasch = 0;
-        var ausgabeZahl1Value: any = 0;
-        ausgabeZahl1Value = ausgabeZahl1;
-        var ausgabeZahl2Value: any = 0;
-        ausgabeZahl2Value = ausgabeZahl2;
-        var ausgabeZahl3Value: any = 0;
-        ausgabeZahl3Value = ausgabeZahl3;
-        var wurfValue: any = 0;
-        wurfValue = wurfAnzahl;
-        var paschValue: any = 0;
-        paschValue = paschAnzahl;
-        var dreierValue: any = 0;
-        dreierValue = dreierAnzahl;
+        ausgabeZahl1!.value = "";
+        ausgabeZahl2!.value = "";
+        ausgabeZahl3!.value = "";
+        wurfAnzahl!.value = "0";
+        paschAnzahl!.value = "0";
+        dreierAnzahl!.value = "0";
+        console.clear();
     }
 }
 
